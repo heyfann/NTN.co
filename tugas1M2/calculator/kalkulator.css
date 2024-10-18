@@ -1,0 +1,106 @@
+
+.calculator {
+    width: 320px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #30334e, #222437);
+    box-shadow: 10px 10px 20px #1a1b26, -10px -10px 20px #363850;
+  }
+  
+  /* Input Display */
+  input {
+    width: 100%;
+    height: 80px;
+    background: #1a1b26;
+    border: none;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 48px;
+    text-align: right;
+    padding: 10px;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.25), inset -2px -2px 5px rgba(255, 255, 255, 0.1);
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Tombol */
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 12px;
+  }
+  
+  button {
+    height: 60px;
+    font-size: 24px;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    background: #3d4059;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), -2px -2px 5px rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  button:hover {
+    background: #52557a;
+  }
+  
+  button:active {
+    background: #2e324b;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3), inset -2px -2px 5px rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Operator Buttons */
+  button.operator {
+    background: #7e5ded;
+  }
+  
+  button.operator:hover {
+    background: #9279f2;
+  }
+  
+  button.operator:active {
+    background: #6245d6;
+  }
+  
+  /* Tombol Sama Dengan (Equal) */
+  button.equal {
+    background: #7e5ded;
+  }
+  
+  button.equal:hover {
+    background: #9279f2;
+  }
+  
+  button.equal:active {
+    background: #6245d6;
+  }
+  
+  /* Tombol Clear */
+  button.clear {
+    background: #ff6347;
+  }
+  
+  button.clear:hover {
+    background: #ff856e;
+  }
+  
+  button.clear:active {
+    background: #d9534f;
+  }
+  
+  /* Tombol Angka 0 Lebar */
+  button.zero {
+    grid-column: span 2;
+    width: 100%;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e8e8e8;
+  }
+  
